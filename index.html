@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hauptseite</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="hauptmenu">
+            <a href="index.html">Schnitt<span style="color: red;">punkt</span></a>
+        </div>
+        <div class="buchen">
+            <a href="salon.html">Buchen</a>
+        </div>
+        <div class="stornieren">
+            <a href="storno.html">Stornieren</a>
+        </div>
+        <div class="Kontakt">
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="Abstand">
+        </div>
+    </header>
+    <main>
+        <div style="font-size: 2rem; font-weight: 700;">
+            Termin online buchen
+        </div>
+        <div>
+            Dienstag bis Freitag 9-18 Uhr, Samstag 9-14Uhr
+        </div>
+        <div class="uebersicht">
+            <div class="uebersicht1">1</div>
+            <div>Leistung</div>
+            <div>——</div>
+            <div class="uebersicht2">2</div>
+            <div>Person</div>
+            <div>——</div>
+            <div class="uebersicht3">3</div>
+            <div>Zeit</div>
+            <div>——</div>
+            <div class="uebersicht4">4</div>
+            <div>Ihre Daten</div>
+        </div>
+        <div class="container-left-right">
+            <div class="left">
+                <div class="ueberschrift123">1 - Leistung</div>
+                <div class="leistungen">
+<!-- hier ist die erste datenbank abfrage mit get um die preise zu erhalten -->
+                </div>
+                <div class="ueberschrift123">2 - Person</div>
+                <div class="personen">
+                </div>
+                <div class="ueberschrift123">3 - Datum und Uhrzeit</div>
+                <div class="datum">
+                    <div class="datum-vor">&lt</div>
+                    <input type="date" name="termin-datum" id="termin-datum">
+                    <div class="datum-nach">&gt</div>
+                </div>
+                <div class="zeiten">
+                    
+                </div>
+            </div>
+            <div class="right">
+                <div class="ueberschrift123" style="margin-left: 2rem;">Ihre Buchung</div>
+                <div class="buchungsuebersicht">
+                    <div class="buchungsuebersicht-eigenschaften">
+                        <div>Leistung/en</div>
+                        <div class="buchungLeistung">--</div>
+                    </div>
+                    <div class="buchungsuebersicht-eigenschaften">
+                        <div>Person</div>
+                        <div class="buchungName">--</div>
+                    </div>
+                    <div class="buchungsuebersicht-eigenschaften">
+                        <div>Termin</div>
+                        <div class="buchungTermin">--</div>
+                    </div>
+                    <div class="buchungsuebersicht-eigenschaften">
+                        <div>Dauer</div>
+                        <div class="buchungDauer">--</div>
+                    </div>
+                    <div class="buchungsuebersicht-eigenschaften-preis">
+                        <div>Preis</div>
+                        <div class="buchungPreis">--€</div>
+                    </div>
+                </div>
+                <div>
+                    <form action="" class="form-eingabe">
+                        <div>
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="Name" required>
+                        </div>
+                        <div>
+                            <label for="tel">Tel:</label>
+                            <input type="text" name="tel" id="tel" placeholder="Telefonnummer" required>
+                        </div>
+                        <div>
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" placeholder="Email" required>
+                        </div>
+                        <div>
+                            <button type="submit">Verbindlich buchen</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+
+</html>
